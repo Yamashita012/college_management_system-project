@@ -1,6 +1,6 @@
 import mysql.connector as mysql
 
-db = mysql.connect(host="localhost",user="root",password="",database="college")
+db = mysql.connect(host="x-x-x-x",user="x-x-x-x",password="x-x-x-x",database="college")#x-x-x-x = make_changes
 command_handler = db.cursor(buffered=True)
 
 def student_session(username):
@@ -169,8 +169,8 @@ def auth_administrator():
     username = input(str("[~] Username : "))
     password = input(str("[~] Password : "))
 
-    if username == "admin":
-        if password == "password":
+    if username == "x-x-x-x": #make_changes
+        if password == "x-x-x-x": #make_changes
             administrator_session()
         else:
             print("Incorrect password!")
